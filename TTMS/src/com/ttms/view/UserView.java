@@ -102,14 +102,17 @@ public class UserView  extends JFrame{
 						if(num==0)
 						{
 							//售票员
+							new MainView().setVisible(true);;
 						}
 						if(num==1)
 						{
 							//系统管理员
+							new MainView().setVisible(true);
 						}
 						if(num==2)
 						{
 							//经理
+							new MainView().setVisible(true);
 						}
 					}
 					
@@ -238,6 +241,6 @@ public class UserView  extends JFrame{
 	}
 	public static void main(String[] args) {
 		UserView tets=new UserView();
-		tets.loginUi();;
+		tets.loginUi();
 	}
 }

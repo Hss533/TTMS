@@ -51,7 +51,7 @@ public class StudioDao {
 	 */
 	public int modifyStudio(Studio studio,Connection con)
 	{
-		String sql="update from studio set stdioName=? ,set studio";
+		String sql="update from studio set stdioName=? , stdioRowsset studio";
 		int num = 0;
 		PreparedStatement ptmt=null;
 		try{
@@ -68,8 +68,17 @@ public class StudioDao {
 	/**
 	 * 查询所有演出厅
 	 */
-	public ResultSet allStudio(Studio studio,Connection)
+	public ResultSet allStudio(Studio studio,Connection con)
 	{
-		
+		String sql="select from stdio ";
+		ResultSet res=null;
+		PreparedStatement ptmt;
+		try{
+			
+		}catch(Exception e)
+		{
+			
+		}
+		return null;
 	}
 }
