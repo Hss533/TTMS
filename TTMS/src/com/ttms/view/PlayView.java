@@ -247,6 +247,7 @@ public class PlayView extends JFrame {
 
 	}
 	private void chooseseats(ActionEvent e) {
-		//¿Ó“Êª‘
+		Seat a = new Seat();
+		a.go();
 	}
 }

@@ -91,6 +91,12 @@ public class MainView extends JFrame {
 		panel.setLayout(gl_panel);
 		
 		JButton button = new JButton("\u7BA1\u7406");
+		button.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				new ManageChange().setVisible(true);
+			}
+		});
 		button.setFont(new Font("ËÎÌו", Font.PLAIN, 24));
 		button.setBackground(new Color(255, 228, 225));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
