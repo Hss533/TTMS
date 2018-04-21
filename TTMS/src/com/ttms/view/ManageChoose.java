@@ -15,7 +15,7 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.Color;
 
-public class ManageChange extends JFrame {
+public class ManageChoose extends JFrame {
 
 	private JPanel contentPane;
 
@@ -26,7 +26,7 @@ public class ManageChange extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ManageChange frame = new ManageChange();
+					ManageChoose frame = new ManageChoose();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -38,7 +38,7 @@ public class ManageChange extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ManageChange() {
+	public ManageChoose() {
 		setTitle("\u7BA1\u7406\u9009\u62E9");
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(600, 100, 474, 639);

@@ -2,11 +2,11 @@ package com.ttms.model;
 
 public class Studio {
 	
-	private int studioId;
-
-	private String studioName;
-	private int studioRows;
-	private int studioCols;
+	private int studioId;//演出厅ID
+	private String studioName;//演出厅名称
+	private int studioRows;//行数
+	private int studioCols;//列数
+	
 	public String getStudioName() {
 		return studioName;
 	}

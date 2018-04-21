@@ -8,6 +8,9 @@ import java.awt.Image;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import com.ttms.test.MovieView;
+
 import javax.swing.GroupLayout;
 import javax.swing.ImageIcon;
 import javax.swing.GroupLayout.Alignment;
@@ -94,7 +97,7 @@ public class MainView extends JFrame {
 		button.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
-				new ManageChange().setVisible(true);
+				new ManageChoose().setVisible(true);
 			}
 		});
 		button.setFont(new Font("ËÎÌו", Font.PLAIN, 24));
