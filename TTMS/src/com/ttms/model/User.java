@@ -7,11 +7,11 @@ public class User {
 	 * 权限若为1为系统管理员
 	 * 权限若为2为经理
 	 */
-	private int userId;
-	private String userName;
-	private String userPassword;
-	private int userPower;
-	private String userDesc="";
+	private int userId;//用户Id 
+	private String userName;//用户名称
+	private String userPassword;//用户密码
+	private int userPower;//用户权限
+	private String userDesc="";//用户备注
 	
 	public User()
 	{

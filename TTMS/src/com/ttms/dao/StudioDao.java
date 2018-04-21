@@ -1,6 +1,7 @@
 package com.ttms.dao;
 
 import java.sql.PreparedStatement;
+import java.util.*;
 import java.sql.*;
 
 import com.ttms.model.Studio;
@@ -68,17 +69,30 @@ public class StudioDao {
 	/**
 	 * 查询所有演出厅
 	 */
-	public ResultSet allStudio(Studio studio,Connection con)
+	public List<Studio> allStudio(Connection con)
 	{
-		String sql="select from stdio ";
-		ResultSet res=null;
+		List<Studio> studioList=new ArrayList<>();
+		String sql="select * from studio";
 		PreparedStatement ptmt;
-		try{
-			
-		}catch(Exception e)
+		ResultSet res=null;	
+		try
+		{
+			Studio studio=new Studio();
+			ptmt=con.prepareStatement(sql);
+			res=ptmt.executeQuery();
+			while(res.next())
+			{
+				studio.setStudioId(res.getInt("studioId"));
+				studio.setStudioName(res.getString("studioName"));
+				studio.setStudioRows(res.getInt("studioRows"));
+				studio.setStudioCols(res.getInt("studioCols"));
+				studioList.add(studio);
+			}
+		}
+		catch(Exception e)
 		{
 			
 		}
-		return null;
+		return studioList;
 	}
 }
