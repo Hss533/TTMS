@@ -65,6 +65,7 @@ public class MovieManageView extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
+					System.out.println("ok test");
 					MovieManageView frame = new MovieManageView();
 					frame.setVisible(true);
 				} catch (Exception e) {
